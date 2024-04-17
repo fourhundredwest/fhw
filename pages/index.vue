@@ -68,7 +68,7 @@ useHead({
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
 			aria-hidden="true"
-			class="absolute right-0 top-0 h-[836px] w-[880px] -translate-y-1/4 translate-x-1/3 sm:translate-y-0"
+			class="absolute right-0 top-0 h-[836px] w-[880px] -translate-y-1/2 translate-x-1/3 sm:-translate-y-1/3"
 		>
 			<g filter="url(#filter2_f_1_7)">
 				<path

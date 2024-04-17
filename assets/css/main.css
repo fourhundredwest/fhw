@@ -2,7 +2,101 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+	--font-sans: "DM Sans";
+
+	--color-surface-0: 0deg 0% 100%;
+	--color-surface-1: 320deg 2% 97%;
+	--color-surface-2: 320deg 3% 92%;
+	--color-surface-3: 319deg 3% 91%;
+	--color-subtle: 263deg 2% 55%;
+	--color-text: 240deg 5% 16%;
+	--color-primary: 0deg 0% 0%;
+	--color-on-primary: 0deg 0% 100%;
+	--color-accent: 230deg 76% 62%;
+	--color-on-accent: 0deg 0% 100%;
+
+	--color-inverse-surface-0: 0deg 0% 0%;
+	--color-inverse-text: 0deg 0% 100%;
+
+	@media (prefers-color-scheme: dark) {
+		--color-surface-0: 0deg 0% 10%;
+		--color-surface-1: 320deg 2% 13%;
+		--color-surface-2: 320deg 3% 18%;
+		--color-surface-3: 319deg 3% 19%;
+		--color-subtle: 263deg 2% 65%;
+		--color-text: 0deg 0% 100%;
+		--color-primary: 0deg 0% 100%;
+		--color-on-primary: 0deg 0% 0%;
+		--color-accent: 230deg 76% 62%;
+		--color-on-accent: 0deg 0% 100%;
+	}
+
+	--gap-sm: theme(spacing.3);
+	--gap: theme(spacing.6);
+	--gap-lg: theme(spacing.12);
+	--header-height: theme(spacing.20);
+	--content-height: calc(100vh - var(--header-height));
+	--content-width: theme(maxWidth.5xl);
+	--form-height: theme(spacing.12);
+
+	@media screen(sm) {
+		--gap-sm: theme(spacing.5);
+		--gap: theme(spacing.10);
+		--gap-lg: theme(spacing.20);
+	}
+}
+
+::selection {
+	background: hsl(39deg 79% 86%);
+	color: hsl(0deg 0% 0%);
+}
+
 html {
+	color: theme(colors.text);
+	background: theme(colors.surface-0);
+	scroll-behavior: smooth;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+
+	@media (prefers-reduced-motion: reduce) {
+		scroll-behavior: auto;
+	}
+}
+
+[id] {
+	scroll-margin-top: calc(var(--header-height) + var(--gap));
+}
+
+.animate-enter {
+	opacity: 0;
+	animation: enter 500ms forwards;
+	animation-delay: calc(var(--stagger) * 200ms);
+
+	@media (prefers-reduced-motion: reduce) {
+		animation: enter-reduced 500ms forwards;
+		animation-delay: 200ms !important;
+	}
+}
+
+@keyframes enter {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+@keyframes enter-reduced {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
 }

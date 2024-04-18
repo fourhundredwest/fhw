@@ -34,7 +34,7 @@
 
 html {
 	color: theme(colors.text);
-	background: hsl(colors.surface.0);
+	background: theme(colors.surface-0);
 	scroll-behavior: smooth;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;

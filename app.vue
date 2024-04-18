@@ -11,6 +11,9 @@ useSeoMeta({
 	ogImage: "/og-image.png",
 	ogImageAlt: "FourHundredWest",
 });
+
+let route = useRoute();
+let menu = ref([{ name: "Contact", href: "#contact" }]);
 </script>
 
 <template>
@@ -36,8 +39,15 @@ useSeoMeta({
 				</svg>
 			</NuxtLink>
 
-			<ul role="list">
-				<li><a href="#contact" class="font-medium">Contact</a></li>
+			<ul role="list" class="flex items-center gap-6">
+				<li v-for="item in menu">
+					<NuxtLink
+						:to="item.href"
+						:aria-current="route.hash === item.href ? 'page' : ''"
+						class="flex shrink-0 items-center justify-center border-b-2 border-transparent text-[15px] font-medium hover:text-accent aria-[current=page]:border-accent aria-[current=page]:text-accent"
+						>{{ item.name }}</NuxtLink
+					>
+				</li>
 			</ul>
 		</nav>
 	</header>

@@ -10,7 +10,7 @@ useHead({
 			class="mx-auto flex min-h-content-height max-w-content-width flex-col justify-center space-y-gap"
 		>
 			<h1
-				class="animate-enter max-w-xl text-4xl tracking-tight [--stagger:2] sm:max-w-2xl sm:text-7xl lg:max-w-4xl lg:text-8xl"
+				class="animate-enter max-w-xl text-4xl font-light tracking-tight [--stagger:2] sm:max-w-2xl sm:text-7xl lg:max-w-4xl lg:text-8xl"
 			>
 				Building
 				<span class="text-accent">custom applications</span>

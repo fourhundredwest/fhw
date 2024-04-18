@@ -8,7 +8,8 @@ export default defineNuxtConfig({
 			"@nuxtjs/google-fonts",
 			{
 				families: {
-					"DM Sans": [400, 500, 600, 700],
+					// TODO: Remove unused weights
+					"DM Sans": [300, 400, 500, 600, 700],
 				},
 			},
 		],

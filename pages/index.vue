@@ -5,10 +5,8 @@ useHead({
 </script>
 
 <template>
-	<section class="relative p-gap">
-		<div
-			class="mx-auto flex min-h-content-height max-w-content-width flex-col justify-center space-y-gap"
-		>
+	<Section class="relative">
+		<div class="flex min-h-content-height flex-col justify-center space-y-gap">
 			<h1
 				class="animate-enter max-w-xl text-4xl font-light tracking-tight [--stagger:2] sm:max-w-2xl sm:text-7xl lg:max-w-4xl lg:text-8xl"
 			>
@@ -25,7 +23,9 @@ useHead({
 			</div>
 		</div>
 
-		<aside class="absolute inset-0 -z-10 min-h-content-height overflow-hidden">
+		<aside
+			class="absolute inset-0 -top-header-height -z-10 min-h-content-height overflow-hidden"
+		>
 			<svg
 				class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-surface-3 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
 				aria-hidden="true"
@@ -56,18 +56,16 @@ useHead({
 				class="absolute bottom-0 right-0 translate-x-1/4 translate-y-1/3 opacity-30"
 			/>
 		</aside>
-	</section>
+	</Section>
 
-	<section id="contact" class="bg-primary p-gap text-on-primary">
-		<div class="mx-auto max-w-content-width">
-			<h2 class="font-semibold">Contact</h2>
-			<div class="h-3"></div>
-			<div class="grid">
-				<a href="tel:8444447638" class="text-lg">+1 (844) 444-7638</a>
-				<a href="mailto:hello@fourhundredwest.com" class="text-lg"
-					>hello@fourhundredwest.com</a
-				>
-			</div>
+	<Section id="contact" class="bg-primary text-on-primary">
+		<h2 class="font-semibold">Contact</h2>
+		<div class="h-3"></div>
+		<div class="grid">
+			<a href="tel:8444447638" class="text-lg">+1 (844) 444-7638</a>
+			<a href="mailto:hello@fourhundredwest.com" class="text-lg"
+				>hello@fourhundredwest.com</a
+			>
 		</div>
-	</section>
+	</Section>
 </template>

@@ -13,8 +13,8 @@
 	--color-text: 240deg 5% 16%;
 	--color-primary: 0deg 0% 0%;
 	--color-on-primary: 0deg 0% 100%;
-	--color-accent: 39deg 79% 86%;
-	--color-on-accent: 0deg 0% 0%;
+	--color-accent: 230deg 76% 62%;
+	--color-on-accent: 0deg 0% 100%;
 
 	--gap: theme(spacing.6);
 	--header-height: theme(spacing.20);

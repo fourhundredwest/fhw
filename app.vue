@@ -21,10 +21,7 @@ useSeoMeta({
 			aria-label="Primary"
 			class="mx-auto flex h-header-height max-w-content-width items-center justify-between"
 		>
-			<NuxtLink
-				to="/"
-				class="flex items-center justify-center border-l-[3px] border-text pl-3"
-			>
+			<NuxtLink to="/" class="flex items-center justify-center">
 				<svg
 					viewBox="0 0 192 85"
 					fill="none"

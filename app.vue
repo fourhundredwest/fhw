@@ -52,9 +52,7 @@ let menu = ref([{ name: "Contact", href: "#contact" }]);
 		</nav>
 	</header>
 
-	<main id="content" class="min-h-content-height p-gap">
-		<div class="mx-auto max-w-content-width">
-			<NuxtPage />
-		</div>
+	<main id="content" class="min-h-content-height">
+		<NuxtPage />
 	</main>
 </template>

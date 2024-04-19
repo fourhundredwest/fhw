@@ -12,15 +12,20 @@ useSeoMeta({
 	ogImageAlt: "FourHundredWest",
 });
 
-let route = useRoute();
-let menu = ref([{ name: "Contact", href: "#contact" }]);
+const route = useRoute();
+const menu = ref([
+	{ name: "Home", href: "#home" },
+	{ name: "Services", href: "#services" },
+	{ name: "Contact", href: "#contact" },
+]);
 </script>
 
 <template>
 	<a href="#content" class="sr-only focus:not-sr-only">Skip to main content</a>
 
 	<header class="px-gap">
-		<nav
+		<app-container
+			is="nav"
 			aria-label="Primary"
 			class="mx-auto flex h-header-height max-w-content-width items-center justify-between"
 		>
@@ -40,7 +45,7 @@ let menu = ref([{ name: "Contact", href: "#contact" }]);
 			</NuxtLink>
 
 			<ul role="list" class="flex items-center gap-6">
-				<li v-for="item in menu">
+				<li v-for="item in menu" :key="item.name">
 					<NuxtLink
 						:to="item.href"
 						:aria-current="route.hash === item.href ? 'page' : ''"
@@ -49,7 +54,7 @@ let menu = ref([{ name: "Contact", href: "#contact" }]);
 					>
 				</li>
 			</ul>
-		</nav>
+		</app-container>
 	</header>
 
 	<main id="content" class="min-h-content-height">

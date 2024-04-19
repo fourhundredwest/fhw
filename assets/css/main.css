@@ -16,14 +16,18 @@
 	--color-accent: 230deg 76% 62%;
 	--color-on-accent: 0deg 0% 100%;
 
+	--gap-sm: theme(spacing.3);
 	--gap: theme(spacing.6);
+	--gap-lg: theme(spacing.12);
 	--header-height: theme(spacing.20);
 	--content-height: calc(100vh - var(--header-height));
-	--content-width: theme(maxWidth.6xl);
+	--content-width: theme(maxWidth.5xl);
 	--form-height: theme(spacing.12);
 
 	@media screen(sm) {
+		--gap-sm: theme(spacing.5);
 		--gap: theme(spacing.10);
+		--gap-lg: theme(spacing.20);
 	}
 }
 

@@ -13,7 +13,9 @@ export default {
 	theme: {
 		extend: {
 			spacing: {
+				"gap-sm": "var(--gap-sm)",
 				gap: "var(--gap)",
+				"gap-lg": "var(--gap-lg)",
 				"header-height": "var(--header-height)",
 				"content-height": "var(--content-height)",
 				"content-width": "var(--content-width)",

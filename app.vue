@@ -55,7 +55,7 @@ useSeoMeta({
 					>hello@fourhundredwest.com</a
 				>
 			</div>
-			<div class="h-3"></div>
+			<div class="h-3"> </div>
 			<p class="text-lg text-subtle">Copyright &copy; 2024 Four Hundred West</p>
 		</app-section>
 	</div>

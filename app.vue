@@ -56,7 +56,7 @@ useSeoMeta({
 				>
 			</div>
 			<div class="h-3"></div>
-			<p class="text-lg text-subtle">&copy; Four Hundred West</p>
+			<p class="text-lg text-subtle">Copyright &copy; 2024 Four Hundred West</p>
 		</app-section>
 	</div>
 </template>

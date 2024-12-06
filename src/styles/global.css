@@ -25,6 +25,10 @@
 	::file-selector-button {
 		border-color: var(--color-border, currentColor);
 	}
+
+	[id] {
+		scroll-margin-top: 2.5rem;
+	}
 }
 
 .animate-enter {

@@ -24,3 +24,11 @@ Format changes via [prettier](https://prettier.io):
 ```sh
 pnpm format
 ```
+
+## Resources
+
+Thanks to the lovely people behind the tools we use :)
+
+- https://astro.build
+- https://tailwindcss.com
+- https://teenyicons.com

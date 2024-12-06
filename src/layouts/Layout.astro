@@ -1,5 +1,18 @@
 ---
 import "../styles/global.css";
+
+let headerMenu = [
+	{ name: "Home", href: "#" },
+	{ name: "Services", href: "#services" },
+	{ name: "Insights", href: "#insights" },
+];
+
+let footerMenu = [
+	{ name: "Home", href: "#" },
+	{ name: "Services", href: "#services" },
+	{ name: "Insights", href: "#insights" },
+	{ name: "Contact", href: "#contact" },
+];
 ---
 
 <!doctype html>
@@ -16,12 +29,91 @@ import "../styles/global.css";
 		<meta property="og:image" content="/opengraph-image.jpg" />
 		<title>Four Hundred West</title>
 	</head>
-	<body>
-		<a href="#content" class="sr-only focus:not-sr-only">Skip to main content</a
+	<body
+		class="text-text bg-base h-full scroll-mt-10 antialiased motion-safe:scroll-smooth"
+	>
+		<a
+			href="#content"
+			class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:bg-white focus:text-black"
+			>Skip to main content</a
 		>
 
-		<main id="content">
-			<slot />
-		</main>
+		<div class="grid min-h-screen grid-rows-[auto_1fr_auto]">
+			<header class="px-10">
+				<div class="mx-auto flex h-20 max-w-5xl items-center gap-5">
+					<div>
+						<a
+							href="#"
+							class="flex text-[13px] leading-[0.875] font-semibold tracking-tight uppercase"
+							>Four<br />Hundred<br />West</a
+						>
+					</div>
+
+					<div class="bg-border h-8 w-px"></div>
+
+					<nav aria-label="Primary" class="flex-1">
+						<ul role="list" class="flex items-center gap-5">
+							{
+								headerMenu.map((item) => (
+									<li>
+										<a href={item.href} class="text-md">
+											{item.name}
+										</a>
+									</li>
+								))
+							}
+						</ul>
+					</nav>
+
+					<div>
+						<a
+							href="#contact"
+							class="hover:bg-overlay border-text flex items-center gap-2 rounded-md border px-2 py-1 text-sm transition"
+						>
+							<span class="pb-px">Let's talk</span>
+							<svg
+								viewBox="0 0 15 15"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+								width="15"
+								height="15"
+								><path
+									d="M5.5 11.493l.416-.278a.5.5 0 00-.416-.222v.5zm2 2.998l-.416.277a.5.5 0 00.832 0l-.416-.277zm2-2.998v-.5a.5.5 0 00-.416.222l.416.278zm-4.416.277l2 2.998.832-.555-2-2.998-.832.555zm2.832 2.998l2-2.998-.832-.555-2 2.998.832.555zM9.5 11.993h4v-1h-4v1zm4 0c.829 0 1.5-.67 1.5-1.5h-1c0 .277-.223.5-.5.5v1zm1.5-1.5V1.5h-1v8.994h1zM15 1.5c0-.83-.671-1.5-1.5-1.5v1c.277 0 .5.223.5.5h1zM13.5 0h-12v1h12V0zm-12 0C.671 0 0 .67 0 1.5h1c0-.277.223-.5.5-.5V0zM0 1.5v8.993h1V1.5H0zm0 8.993c0 .83.671 1.5 1.5 1.5v-1a.499.499 0 01-.5-.5H0zm1.5 1.5h4v-1h-4v1zM5 8h5V7H5v1zM4 5h7V4H4v1z"
+									fill="currentColor"></path></svg
+							>
+						</a>
+					</div>
+				</div>
+			</header>
+
+			<main id="content" class="px-10">
+				<div class="mx-auto max-w-5xl">
+					<slot />
+				</div>
+			</main>
+
+			<footer class="px-10">
+				<div class="mx-auto max-w-5xl pb-10">
+					<p class="text-sm">
+						&copy; {new Date().getFullYear()}
+						<span class="font-semibold">Four Hundred West</span>
+					</p>
+
+					<nav aria-label="Sitemap">
+						<ul role="list" class="flex items-center gap-2.5">
+							{
+								footerMenu.map((item) => (
+									<li>
+										<a href={item.href} class="text-primary text-sm underline">
+											{item.name}
+										</a>
+									</li>
+								))
+							}
+						</ul>
+					</nav>
+				</div>
+			</footer>
+		</div>
 	</body>
 </html>

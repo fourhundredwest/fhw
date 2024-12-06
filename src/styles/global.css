@@ -1,1 +1,49 @@
 @import "tailwindcss";
+
+@theme {
+	--text-md: 15px;
+	--text-md--line-height: 1.375rem;
+
+	--color-base: var(--color-white);
+	--color-surface: var(--color-neutral-50);
+	--color-overlay: var(--color-neutral-100);
+	--color-border: var(--color-neutral-200);
+	--color-muted: var(--color-neutral-500);
+	--color-subtle: var(--color-neutral-700);
+	--color-text: var(--color-neutral-950);
+	--color-primary: #105454;
+	--color-secondary: #f2be3c;
+}
+
+@layer base {
+	*,
+	::after,
+	::before,
+	::backdrop,
+	::file-selector-button {
+		border-color: var(--color-border, currentColor);
+	}
+}
+
+.animate-enter {
+	opacity: 0;
+	animation: enter 500ms forwards;
+	animation-delay: calc(var(--stagger) * 200ms);
+
+	@media (prefers-reduced-motion: reduce) {
+		animation-delay: -1ms !important;
+		animation-duration: 1ms !important;
+	}
+}
+
+@keyframes enter {
+	0% {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: none;
+	}
+}

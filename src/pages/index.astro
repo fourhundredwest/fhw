@@ -3,9 +3,289 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<h1>Custom applications to simplify your business operations</h1>
-	<p>
-		We build tailored software to optimise operations—boosting productivity and
-		efficiency for your business.
-	</p>
+	<section class="relative mt-40" id="home">
+		<div class="animate-enter" style="--stagger: 2.5">
+			<div
+				aria-hidden="true"
+				class="pointer-events-none absolute inset-x-0 -top-20 -z-10 mx-auto h-60 w-120 transform-gpu blur-2xl"
+			>
+				<div
+					class="bg-primary/15 absolute top-0 left-0 h-full w-3/5 -rotate-12 rounded-full"
+				>
+				</div>
+				<div
+					class="bg-secondary/15 absolute top-0 right-0 h-full w-3/5 -rotate-12 rounded-full"
+				>
+				</div>
+			</div>
+		</div>
+
+		<h1
+			class="animate-enter mx-auto max-w-2xl text-center font-serif text-5xl tracking-tight"
+			style="--stagger: 1.25"
+		>
+			Custom applications to simplify your business operations
+		</h1>
+
+		<p
+			class="animate-enter text-subtle mx-auto mt-10 max-w-xl text-center text-xl"
+			style="--stagger: 2"
+		>
+			We build tailored software to optimise operations—boosting productivity
+			and efficiency for your business.
+		</p>
+
+		<div class="animate-enter mt-10 text-center" style="--stagger: 2.5">
+			<a
+				href="#services"
+				class="bg-text text-surface hover:bg-text/90 text-md hover:ring-muted inset-shadow-surface/20 inset-ring-surface/15 ring-subtle inline-flex shrink-0 cursor-pointer items-center gap-3 rounded-lg px-3 py-1.5 inset-ring inset-shadow-sm ring shadow-md transition"
+			>
+				<span class="pb-px">Get started</span>
+				<svg
+					viewBox="0 0 15 15"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+					width="15"
+					height="15"
+					><path d="M13.5 7.5l-4-4m4 4l-4 4m4-4H1" stroke="currentColor"
+					></path></svg
+				>
+			</a>
+		</div>
+	</section>
+
+	<div aria-hidden="true" class="flex flex-col gap-1 py-20">
+		<hr />
+		<hr />
+	</div>
+
+	<section id="services">
+		<div
+			class="grid divide-y border *:p-10 md:grid-cols-3 md:divide-x md:divide-y-0"
+		>
+			<div>
+				<h2 class="font-semibold tracking-tight">
+					Pellentesque habitant morbi
+				</h2>
+				<p class="mt-5 text-gray-700">
+					Morbi laoreet, ipsum et eleifend imperdiet, dui augue bibendum felis,
+					vel tincidunt est ante in quam. Fusce gravida in tortor et porta.
+				</p>
+			</div>
+
+			<div>
+				<h2 class="font-semibold tracking-tight">Cras auctor, massa</h2>
+				<p class="mt-5 text-gray-700">
+					Mauris congue, nulla sed commodo pretium, ante purus ultricies arcu,
+					vitae malesuada arcu neque at velit.
+				</p>
+			</div>
+
+			<div>
+				<h2 class="font-semibold tracking-tight">Quisque feugiat neque</h2>
+				<p class="mt-5 text-gray-700">
+					Proin efficitur tempor massa, a finibus felis ultrices vel. Aenean
+					eget sem diam. Praesent sit amet condimentum quam.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<div aria-hidden="true" class="flex flex-col gap-1 py-20">
+		<hr />
+		<hr />
+	</div>
+
+	<section
+		id="insights"
+		class="grid grid-cols-1 gap-10 md:grid-cols-[33.333333%_auto]"
+	>
+		<div>
+			<h2 class="font-serif text-3xl italic">Insights</h2>
+		</div>
+
+		<div>
+			<div class="grid grid-cols-1 gap-5 pb-10 sm:grid-cols-2">
+				<p>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias
+					aliquam eaque impedit animi beatae officia nostrum nisi saepe?
+					Doloribus culpa minus ut incidunt hic officiis debitis, animi placeat
+					quos repudiandae.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, labore
+					quibusdam. Dolore quod numquam esse, corporis libero qui delectus
+					aperiam minus pariatur quasi tempore.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-2 gap-5 border-b py-5">
+				<p class="text-7xl font-extralight tracking-tight">7%</p>
+				<p class="font-medium">
+					Growth in revenue from streamlining workflows and optimising
+					resources.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-2 gap-5 border-b py-5">
+				<p class="text-7xl font-extralight tracking-tight">
+					$1.5<small class="text-4xl font-normal">M</small>
+				</p>
+				<p class="font-medium">
+					Annual cost savings from reducing labour costs and minimising errors.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-2 gap-5 border-b py-5">
+				<p class="text-7xl font-extralight tracking-tight">3.5x</p>
+				<p class="font-medium">
+					Increase in productivity by handling more work with fewer resources.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-2 gap-5 py-5">
+				<p class="text-7xl font-extralight tracking-tight">80%</p>
+				<p class="font-medium">
+					Faster processing times by automating tasks and accelerating
+					workflows.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<div aria-hidden="true" class="flex flex-col gap-1 py-20">
+		<hr />
+		<hr />
+	</div>
+
+	<section
+		id="contact"
+		class="grid grid-cols-1 gap-10 md:grid-cols-[33.333333%_auto]"
+	>
+		<div class="flex flex-col gap-5">
+			<h2 class="font-serif text-3xl italic">Work with us</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+		</div>
+
+		<form class="flex w-full flex-col gap-5 md:ml-auto md:max-w-md">
+			<label
+				for="name"
+				class="focus-within:border-primary flex w-full cursor-text items-center gap-3 overflow-hidden rounded-md border pr-2 pl-3 focus-within:outline-none"
+			>
+				<svg
+					viewBox="0 0 15 15"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+					width="15"
+					height="15"
+					class="text-subtle"
+					><path
+						d="M3 13v.5h1V13H3zm8 0v.5h1V13h-1zm-7 0v-.5H3v.5h1zm2.5-3h2V9h-2v1zm4.5 2.5v.5h1v-.5h-1zM8.5 10a2.5 2.5 0 012.5 2.5h1A3.5 3.5 0 008.5 9v1zM4 12.5A2.5 2.5 0 016.5 10V9A3.5 3.5 0 003 12.5h1zM7.5 3A2.5 2.5 0 005 5.5h1A1.5 1.5 0 017.5 4V3zM10 5.5A2.5 2.5 0 007.5 3v1A1.5 1.5 0 019 5.5h1zM7.5 8A2.5 2.5 0 0010 5.5H9A1.5 1.5 0 017.5 7v1zm0-1A1.5 1.5 0 016 5.5H5A2.5 2.5 0 007.5 8V7zm0 7A6.5 6.5 0 011 7.5H0A7.5 7.5 0 007.5 15v-1zM14 7.5A6.5 6.5 0 017.5 14v1A7.5 7.5 0 0015 7.5h-1zM7.5 1A6.5 6.5 0 0114 7.5h1A7.5 7.5 0 007.5 0v1zm0-1A7.5 7.5 0 000 7.5h1A6.5 6.5 0 017.5 1V0z"
+						fill="currentColor"></path></svg
+				>
+
+				<input
+					id="name"
+					type="text"
+					placeholder="Enter your name"
+					class="w-full py-2 focus:outline-none"
+				/>
+			</label>
+
+			<label
+				for="email"
+				class="focus-within:border-primary flex w-full cursor-text items-center gap-3 overflow-hidden rounded-md border pr-2 pl-3 focus-within:outline-none"
+			>
+				<svg
+					viewBox="0 0 15 15"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+					width="15"
+					height="15"
+					class="text-subtle"
+					><path
+						d="M10.5 7.5a3 3 0 11-6 0 3 3 0 016 0zm0 0v1a2 2 0 104 0v-1a7 7 0 10-3 5.745"
+						stroke="currentColor"></path></svg
+				>
+
+				<input
+					id="email"
+					type="email"
+					placeholder="Enter your email"
+					class="w-full py-2 focus:outline-none"
+				/>
+			</label>
+
+			<label
+				for="business-name"
+				class="focus-within:border-primary flex w-full cursor-text items-center gap-3 overflow-hidden rounded-md border pr-2 pl-3 focus-within:outline-none"
+			>
+				<svg
+					viewBox="0 0 15 16"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+					width="15"
+					height="15"
+					class="text-subtle"
+					><path
+						d="M0 15.5h15M1.5 4.5l6-3 6 3M0 6.5h15m-13.5 0v9m12-9v9m-9 0v-6h4v6"
+						stroke="currentColor"></path></svg
+				>
+
+				<input
+					id="business-name"
+					type="text"
+					placeholder="Business name"
+					class="w-full py-2 focus:outline-none"
+				/>
+			</label>
+
+			<label
+				for="phone"
+				class="focus-within:border-primary flex w-full cursor-text items-center gap-3 overflow-hidden rounded-md border pr-2 pl-3 focus-within:outline-none"
+			>
+				<svg
+					viewBox="0 0 15 15"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+					width="15"
+					height="15"
+					class="text-subtle"
+					><path
+						d="M6 11.5h3m-5.5 3h8a1 1 0 001-1v-12a1 1 0 00-1-1h-8a1 1 0 00-1 1v12a1 1 0 001 1z"
+						stroke="currentColor"></path></svg
+				>
+
+				<input
+					id="phone"
+					type="tel"
+					placeholder="Phone number"
+					class="w-full py-2 focus:outline-none"
+				/>
+			</label>
+
+			<div class="flex justify-end">
+				<button
+					class="bg-text text-surface hover:bg-text/90 text-md hover:ring-muted inset-shadow-surface/20 inset-ring-surface/15 ring-subtle inline-flex shrink-0 cursor-pointer items-center gap-3 rounded-lg px-3 py-1.5 inset-ring inset-shadow-sm ring shadow-md transition"
+				>
+					<span class="pb-px">Send</span>
+					<svg
+						viewBox="0 0 15 15"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						width="15"
+						height="15"
+						><path
+							d="M14.5.5l.46.197a.5.5 0 00-.657-.657L14.5.5zm-14 6l-.197-.46a.5.5 0 00-.06.889L.5 6.5zm8 8l-.429.257a.5.5 0 00.889-.06L8.5 14.5zM14.303.04l-14 6 .394.92 14-6-.394-.92zM.243 6.93l5 3 .514-.858-5-3-.514.858zM5.07 9.757l3 5 .858-.514-3-5-.858.514zm3.889 4.94l6-14-.92-.394-6 14 .92.394zM14.146.147l-9 9 .708.707 9-9-.708-.708z"
+							fill="currentColor"></path></svg
+					>
+				</button>
+			</div>
+		</form>
+	</section>
+
+	<div aria-hidden="true" class="flex flex-col gap-1 py-20">
+		<hr />
+		<hr />
+	</div>
 </Layout>

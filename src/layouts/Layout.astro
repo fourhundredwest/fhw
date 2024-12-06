@@ -38,7 +38,7 @@ let footerMenu = [
 
 		<div class="grid min-h-screen grid-rows-[auto_1fr_auto]">
 			<header class="px-10">
-				<div class="mx-auto flex h-20 max-w-5xl items-center gap-5">
+				<div class="max-w-content mx-auto flex h-20 items-center gap-5">
 					<div>
 						<a
 							href="#"
@@ -85,13 +85,13 @@ let footerMenu = [
 			</header>
 
 			<main id="content" class="px-10">
-				<div class="mx-auto max-w-5xl">
+				<div class="max-w-content mx-auto">
 					<slot />
 				</div>
 			</main>
 
 			<footer class="px-10">
-				<div class="mx-auto max-w-5xl pb-10">
+				<div class="max-w-content mx-auto pb-10">
 					<p class="text-sm">
 						&copy; {new Date().getFullYear()}
 						<span class="font-semibold">Four Hundred West</span>

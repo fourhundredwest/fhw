@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
 @theme {
+	--container-content: var(--container-5xl);
+
 	--text-md: 15px;
 	--text-md--line-height: 1.375rem;
 

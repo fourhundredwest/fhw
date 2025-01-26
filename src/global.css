@@ -14,10 +14,25 @@
 	--color-subtle: var(--color-neutral-700);
 	--color-text: var(--color-neutral-950);
 	--color-primary: #105454;
+	--color-on-primary: #fefefe;
 	--color-secondary: #f2be3c;
+
+	--spacing-page-top: 48px;
+	--spacing-page-gutter: 32px;
 }
 
 @layer base {
+	:root {
+		@media (width >= theme(--breakpoint-sm)) {
+			--spacing-page-top: 64px;
+			--spacing-header-height: 80px;
+		}
+
+		@media (width >= theme(--breakpoint-md)) {
+			--spacing-page-gutter: 48px;
+		}
+	}
+
 	*,
 	::after,
 	::before,
@@ -28,6 +43,17 @@
 
 	[id] {
 		scroll-margin-top: 2.5rem;
+	}
+
+	/* Revert tailwindcss' default list style overrides, encouraging the use of
+	 * role="list" to set the list style to none and maintain accessibility. */
+	ol,
+	ul {
+		list-style: initial;
+	}
+	ol[role="list"],
+	ul[role="list"] {
+		list-style: none;
 	}
 }
 

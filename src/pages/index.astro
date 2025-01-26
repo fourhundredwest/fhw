@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<section class="relative mt-40" id="home">
+	<section id="home" class="relative">
 		<div class="animate-enter" style="--stagger: 2.5">
 			<div
 				aria-hidden="true"
@@ -54,10 +54,7 @@ import Layout from "../layouts/Layout.astro";
 		</div>
 	</section>
 
-	<div aria-hidden="true" class="flex flex-col gap-1 py-20">
-		<hr />
-		<hr />
-	</div>
+	<div aria-hidden="true" class="h-1.5 border-y"></div>
 
 	<section id="services">
 		<div
@@ -91,10 +88,7 @@ import Layout from "../layouts/Layout.astro";
 		</div>
 	</section>
 
-	<div aria-hidden="true" class="flex flex-col gap-1 py-20">
-		<hr />
-		<hr />
-	</div>
+	<div aria-hidden="true" class="h-1.5 border-y"></div>
 
 	<section
 		id="insights"
@@ -153,10 +147,7 @@ import Layout from "../layouts/Layout.astro";
 		</div>
 	</section>
 
-	<div aria-hidden="true" class="flex flex-col gap-1 py-20">
-		<hr />
-		<hr />
-	</div>
+	<div aria-hidden="true" class="h-1.5 border-y"></div>
 
 	<section
 		id="contact"
@@ -283,9 +274,4 @@ import Layout from "../layouts/Layout.astro";
 			</div>
 		</form>
 	</section>
-
-	<div aria-hidden="true" class="flex flex-col gap-1 py-20">
-		<hr />
-		<hr />
-	</div>
 </Layout>

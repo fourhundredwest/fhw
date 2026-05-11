@@ -7,7 +7,7 @@ useHead({
 useSeoMeta({
 	titleTemplate: "%s - FourHundredWest",
 	description:
-		"FourHundredWest is a development agency that specializes in building websites and web applications.",
+		"FourHundredWest builds custom software applications for business operations.",
 	ogImage: "/og-image.png",
 	ogImageAlt: "FourHundredWest",
 });
@@ -56,7 +56,7 @@ useSeoMeta({
 				>
 			</div>
 			<div class="h-3"> </div>
-			<p class="text-lg text-subtle">Copyright &copy; 2024 Four Hundred West</p>
+			<p class="text-lg text-subtle">Copyright &copy; 2026 FourHundredWest</p>
 		</app-section>
 	</div>
 </template>

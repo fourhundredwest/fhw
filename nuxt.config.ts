@@ -15,6 +15,17 @@ export default defineNuxtConfig({
 			},
 		],
 	],
+	nitro: {
+		preset: "static",
+		prerender: {
+			crawlLinks: true,
+			routes: ["/", "/200.html", "/404.html"],
+			failOnError: false,
+		},
+	},
+	app: {
+		buildAssetsDir: "/_nuxt/",
+	},
 	postcss: {
 		plugins: {
 			"tailwindcss/nesting": {},
